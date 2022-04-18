@@ -1,0 +1,188 @@
+body, html{
+    height: 100%;
+    margin: 0px;
+    background-color: rgb(162, 234, 227)
+}
+
+nav li {
+    display: inline;
+    margin: 20px;
+}
+nav ul {
+    background-color: rgb(102, 196, 234);
+    margin: 0px;
+    list-style-type: none;
+    width: 100%;
+    padding: 10px;
+}
+nav {
+    display: block;
+    color:rgb(72, 38, 163);
+    font-family: "Square Peg", cursive;
+    font-size: 35px;
+    text-align: center;
+}
+nav a{
+    color: rgb(210, 117, 210);
+    text-decoration: none;
+}
+nav a:hover{
+    color: rgb(233, 233, 146);
+}
+
+.hero-image{
+    background-image: linear-gradient(rgba(59, 148, 203, 0.5),rgba(15, 54, 15, 0.45)),url("../images/banfflake-14.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 45%;
+    margin-top: 0px;
+}
+.hero-text{
+    color: antiquewhite;
+    text-align: center;
+    font-family: 'Square Peg', cursive;
+    font-size: 60px;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -45%)
+    
+}
+.hero-text h1{
+    font-size: 100px;
+    text-shadow: 5px rgb(7, 7, 108);
+}
+
+#main{
+    width: 75%;
+    float:right;
+    height: 100%;
+    padding-left: 20px;
+    padding-top: 20px;
+    font-family: 'Tajawal', sans-serif;
+}
+
+#dallas-img{
+    width: 600px;
+    border-radius: 20px;
+    
+}
+#side{
+    width: 20%;
+    float:left;
+    height: 100%;
+    padding: 20px;
+}
+#side ul{
+    list-style-type: none;
+    text-align: center;
+    margin: 0px;
+}
+#side a{
+    text-decoration: none;
+    color: rgb(210, 117, 210);
+}
+#side a:hover{
+    color: rgb(233, 233, 146);
+}
+#profile-image{
+    width: 150px;
+    border-radius: 50%;
+    border: 5px solid;
+
+}
+#profile{
+    text-align: center;
+}
+
+.side-articles, .main-articles{
+    background-color: rgb(137, 218, 218);
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    font-family: 'Tajawal';
+
+}
+.main-articles{
+    font-family: 'Tajawal', sans-serif;
+    font-size: 25px;
+}
+.main-articles h1{
+    font-family: 'Square Peg', cursive;
+    font-size: 50px;
+}
+.main-articles a{
+    color:rgb(210, 117, 210);
+    text-decoration: none;
+}
+.main-articles a:hover{
+    color:rgb(233, 233, 146)
+}
+.main-articles ul{
+
+    text-align: left;
+}
+
+#profile h2{
+    display:inline;
+    font-family: 'Square Peg', cursive;
+}
+
+#profile-details{
+    margin: 10px;
+    text-align: center;
+}
+
+forms{
+    margin-top: 20px;
+}
+
+textarea, input{
+    background-color: antiquewhite;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+}
+
+.side-articles h1{
+    margin-bottom: 20px;
+    font-family: 'Square Peg' cursive;
+}
+
+#side-pics{
+    width: 260px;
+    padding: 5px;
+    border-radius: 15px;
+}
+
+#hobbies-img{
+    width: 500px;
+    border-radius: 20px;
+
+}
+
+footer{
+    background-color: black;
+    width: 100%;
+    height: 5vh;
+    margin-top: 0px;
+}
+
+footer div{
+    color:antiquewhite;
+    text-align:center;
+}
+
+footer hr{
+    margin-top:0px;
+    height: 12px;
+    border: 0px;
+    box-shadow: inset 0px 12px 12px white;
+}
+
+main{
+    overflow:auto;
+}
