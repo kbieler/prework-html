@@ -16,16 +16,20 @@ nav ul {
     padding: 10px;
 }
 nav {
-    display: block;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
     color:rgb(72, 38, 163);
     font-family: "Square Peg", cursive;
     font-size: 35px;
     text-align: center;
 }
+
 nav a{
     color: rgb(210, 117, 210);
     text-decoration: none;
 }
+
 nav a:hover{
     color: rgb(233, 233, 146);
 }
@@ -39,12 +43,13 @@ nav a:hover{
     height: 45%;
     margin-top: 0px;
 }
+
 .hero-text{
     color: antiquewhite;
     text-align: center;
     font-family: 'Square Peg', cursive;
     font-size: 60px;
-    position: absolute;
+    position: relative;
     top: 45%;
     left: 50%;
     transform: translate(-50%, -45%)
@@ -55,26 +60,35 @@ nav a:hover{
     text-shadow: 5px rgb(7, 7, 108);
 }
 
-#main{
-    width: 75%;
-    float:right;
-    height: 100%;
+.main{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-content: center;
+    align-items: center;
     padding-left: 20px;
     padding-top: 20px;
     font-family: 'Tajawal', sans-serif;
+    margin: 25px;
+}
+
+#main-dish{
+    border: 2px dotted rgb(44, 44, 120);
+    padding: 15px;
+    box-sizing:border-box;
+   
 }
 
 #dallas-img{
-    width: 600px;
-    border-radius: 20px;
-    
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   width: 65%;
+   padding: 10px;
+   border-radius: 20px;
+
 }
-#side{
-    width: 20%;
-    float:left;
-    height: 100%;
-    padding: 20px;
-}
+
 #side ul{
     list-style-type: none;
     text-align: center;
@@ -88,55 +102,78 @@ nav a:hover{
     color: rgb(233, 233, 146);
 }
 #profile-image{
-    width: 150px;
-    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    width: 20%;
+    border-radius: 70%;
     border: 5px solid;
-
 }
-#profile{
-    text-align: center;
+
+.side-articles{
+    display: flex;
+    align-self: flex-start;
+    height: 30%;
+    padding: 20px;
+    width: 40%;
 }
 
 .side-articles, .main-articles{
     background-color: rgb(137, 218, 218);
-    text-align: center;
     padding: 10px;
     margin-bottom: 10px;
     border-radius: 10px;
-    font-family: 'Tajawal';
+    font-family: 'Tajawal', sans-serif;
 
 }
 .main-articles{
-    font-family: 'Tajawal', sans-serif;
     font-size: 25px;
+    margin: 10px;
+    padding: 15px;
+    text-align: left;
+    width: 45%;
+    height: 65%;
+    align-self: flex-start;
 }
+
 .main-articles h1{
     font-family: 'Square Peg', cursive;
     font-size: 50px;
+    text-align: center;
 }
+
 .main-articles a{
     color:rgb(210, 117, 210);
     text-decoration: none;
 }
+
 .main-articles a:hover{
     color:rgb(233, 233, 146)
 }
-.main-articles ul{
 
+.main-articles ul{
     text-align: left;
 }
 
-#profile h2{
+#side-dish{
+    border: 2px dotted rgb(44, 44, 120);
+    padding: 15px;
+    box-sizing:border-box;
+    text-align: center;
+    margin: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 30%;
+
+}
+
+#side-dish h2{
     display:inline;
     font-family: 'Square Peg', cursive;
 }
 
-#profile-details{
-    margin: 10px;
-    text-align: center;
-}
-
 forms{
+    align-self: center;
     margin-top: 20px;
 }
 
@@ -147,20 +184,38 @@ textarea, input{
     margin: 5px;
 }
 
-.side-articles h1{
-    margin-bottom: 20px;
-    font-family: 'Square Peg' cursive;
+#toppers{
+    text-align: center;
+    align-self: center;
 }
 
 #side-pics{
     width: 260px;
     padding: 5px;
     border-radius: 15px;
+    align-items: center;
+}
+
+#pets{
+    width: 50%;
+    border: solid 3px;
+    border-radius: 10px;
 }
 
 #hobbies-img{
-    width: 500px;
-    border-radius: 20px;
+    display: inline-flex;
+    align-content: flex-start;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+.gallery{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 10px;
 
 }
 
@@ -185,4 +240,5 @@ footer hr{
 
 main{
     overflow:auto;
+
 }
